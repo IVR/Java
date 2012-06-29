@@ -2,7 +2,7 @@ package LinkedListProblems;
 
 import java.util.Stack;
 
-import common.SNode;
+import common.SLLNode;
 
 /*
  IMPLEMENT THE STACK USING LINKEDLIST
@@ -10,17 +10,17 @@ import common.SNode;
 
 public class StackImplUsingLinkedList {
 
-	SNode head;
+	SLLNode head;
 
 	public StackImplUsingLinkedList(int aData) {
-		head = new SNode();
+		head = new SLLNode();
 		head.setData(aData);
 
 	}
 
 	public void push(int aData) {
 
-		SNode node = new SNode();
+		SLLNode node = new SLLNode();
 		node.setData(aData);
 		node.setNext(head);
 		head = node;

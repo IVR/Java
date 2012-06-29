@@ -1,6 +1,6 @@
 package LinkedListProblems;
 
-import common.SNode;
+import common.SLLNode;
 
 /*
  * 
@@ -8,10 +8,10 @@ import common.SNode;
  */
 public class FindNthNodefromLast {
 
-	SNode head;
+	SLLNode head;
 
 	public FindNthNodefromLast(int aData) {
-		head = new SNode();
+		head = new SLLNode();
 		head.setData(aData);
 
 	}
@@ -23,8 +23,8 @@ public class FindNthNodefromLast {
 			return -1;
 		}
 
-		SNode ahead = head;
-		SNode anode = head;
+		SLLNode ahead = head;
+		SLLNode anode = head;
 
 		for (int i = 0; i < position - 1; i++) {
 			if (ahead.next == null) {
@@ -48,25 +48,25 @@ public class FindNthNodefromLast {
 
 		FindNthNodefromLast linkedList = new FindNthNodefromLast(5);
 
-		SNode node = new SNode();
+		SLLNode node = new SLLNode();
 		node.setData(6);
 
-		SNode node1 = new SNode();
+		SLLNode node1 = new SLLNode();
 		node1.setData(7);
 
-		SNode node2 = new SNode();
+		SLLNode node2 = new SLLNode();
 		node2.setData(8);
 
-		SNode node3 = new SNode();
+		SLLNode node3 = new SLLNode();
 		node3.setData(9);
 
-		SNode node4 = new SNode();
+		SLLNode node4 = new SLLNode();
 		node4.setData(10);
 
-		SNode node5 = new SNode();
+		SLLNode node5 = new SLLNode();
 		node5.setData(11);
 
-		SNode node6 = new SNode();
+		SLLNode node6 = new SLLNode();
 		node6.setData(12);
 
 		node.setNext(node1);

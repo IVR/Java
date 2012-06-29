@@ -1,6 +1,6 @@
 package LinkedListProblems;
 
-import common.SNode;
+import common.SLLNode;
 
 /*
  Finding loop in the linkedList
@@ -10,7 +10,7 @@ import common.SNode;
 
 public class LoopProblems {
 
-	SNode head;
+	SLLNode head;
 
 	// Method for finding the loop
 	public boolean isLoopExist() {
@@ -19,8 +19,8 @@ public class LoopProblems {
 			return false;
 		}
 
-		SNode aforward = head;
-		SNode aBackword = head;
+		SLLNode aforward = head;
+		SLLNode aBackword = head;
 
 		while (aforward.next != null) {
 
@@ -48,8 +48,8 @@ public class LoopProblems {
 	// Method for finding the loop length
 	public int findLoopLength() {
 
-		SNode aforward = head;
-		SNode aBackword = head;
+		SLLNode aforward = head;
+		SLLNode aBackword = head;
 		int count = -1;
 
 		while (aforward.next != null) {
@@ -88,8 +88,8 @@ public class LoopProblems {
 	// Method for finding the loop starting point
 	public int findLoopStartingPointData() {
 
-		SNode aforward = head;
-		SNode aBackword = head;
+		SLLNode aforward = head;
+		SLLNode aBackword = head;
 		int count = -1;
 
 		while (aforward.next != null) {
@@ -132,25 +132,25 @@ public class LoopProblems {
 
 		LoopProblems linkedList = new LoopProblems();
 
-		SNode node = new SNode();
+		SLLNode node = new SLLNode();
 		node.setData(6);
 
-		SNode node1 = new SNode();
+		SLLNode node1 = new SLLNode();
 		node1.setData(7);
 
-		SNode node2 = new SNode();
+		SLLNode node2 = new SLLNode();
 		node2.setData(8);
 
-		SNode node3 = new SNode();
+		SLLNode node3 = new SLLNode();
 		node3.setData(9);
 
-		SNode node4 = new SNode();
+		SLLNode node4 = new SLLNode();
 		node4.setData(10);
 
-		SNode node5 = new SNode();
+		SLLNode node5 = new SLLNode();
 		node5.setData(11);
 
-		SNode node6 = new SNode();
+		SLLNode node6 = new SLLNode();
 		node6.setData(12);
 
 		node.setNext(node1);
